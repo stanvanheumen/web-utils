@@ -1,5 +1,12 @@
 # @stanvanheumen/web-utils
 
+[![npm version](https://img.shields.io/npm/v/@stanvanheumen/web-utils?style=flat-square&color=cb3837&logo=npm)](https://www.npmjs.com/package/@stanvanheumen/web-utils)
+[![npm downloads](https://img.shields.io/npm/dm/@stanvanheumen/web-utils?style=flat-square&color=cb3837&logo=npm)](https://www.npmjs.com/package/@stanvanheumen/web-utils)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@stanvanheumen/web-utils?style=flat-square&label=minzipped&color=2563eb)](https://bundlephobia.com/package/@stanvanheumen/web-utils)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node](https://img.shields.io/node/v/@stanvanheumen/web-utils?style=flat-square&logo=node.js&logoColor=white&color=339933)](https://nodejs.org/)
+[![license](https://img.shields.io/github/license/stanvanheumen/web-utils?style=flat-square&color=22c55e)](https://github.com/stanvanheumen/web-utils/blob/main/LICENSE)
+
 A lightweight, zero-dependency utility library for web development. Provides type-safe helpers for arrays, strings, files, and common regex patterns - fully tree-shakeable with ESM and CommonJS support.
 
 ## Installation

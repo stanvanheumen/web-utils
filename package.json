@@ -4,8 +4,20 @@
     "description": "Lightweight, type-safe utility functions for web development",
     "keywords": [
         "utils",
+        "utilities",
         "typescript",
-        "web"
+        "web",
+        "array",
+        "string",
+        "slug",
+        "slugify",
+        "validation",
+        "email",
+        "url",
+        "regex",
+        "tree-shaking",
+        "esm",
+        "zero-dependency"
     ],
     "license": "MIT",
     "author": {
