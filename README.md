@@ -29,6 +29,45 @@ const { arrayGroupBy, stringIsEmail, blobToFile } = require('@stanvanheumen/web-
 
 ---
 
+## Environment Support
+
+| Function          | Browser | Node.js |
+|-------------------|:-------:|:-------:|
+| `arrayChunk`      | ✓       | ✓       |
+| `arrayGroupBy`    | ✓       | ✓       |
+| `arrayMap`        | ✓       | ✓       |
+| `arrayRemove`     | ✓       | ✓       |
+| `arraySort`       | ✓       | ✓       |
+| `arrayToggle`     | ✓       | ✓       |
+| `stringIsEmail`   | ✓       | ✓       |
+| `stringIsUrl`     | ✓       | ✓       |
+| `stringSlugify`   | ✓       | ✓       |
+| `blobToFile`      | ✓       | ✗ ¹     |
+| Regex constants   | ✓       | ✓       |
+
+> ¹ `blobToFile` relies on the [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) Web API, which is not available in Node.js.
+
+---
+
+## Table of Contents
+
+- [Array Utilities](#array-utilities)
+  - [arrayChunk](#arraychunkitems-size)
+  - [arrayGroupBy](#arraygroupbyitems-key)
+  - [arrayMap](#arraymapitems-key)
+  - [arrayRemove](#arrayremoveitems-index)
+  - [arraySort](#arraysortitems-criteria)
+  - [arrayToggle](#arraytoggleitems-item-compare)
+- [String Utilities](#string-utilities)
+  - [stringIsEmail](#stringisemailvalue)
+  - [stringIsUrl](#stringisurlvalue)
+  - [stringSlugify](#stringslugifyvalue)
+- [File Utilities](#file-utilities)
+  - [blobToFile](#blobtofileblob-name-options)
+- [Regex Constants](#regex-constants)
+
+---
+
 ## API Reference
 
 ### Array Utilities
