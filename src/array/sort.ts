@@ -16,7 +16,7 @@ type ComparableKeys<T> = {
 }[keyof T];
 
 /**
- * A single sort rule applied by {@link arraySort}.
+ * A single sort rule applied by {@link sortArray}.
  */
 export interface SortCriteria<T> {
     /** The field to sort by. Must hold a {@link Comparable} value. */
@@ -54,10 +54,10 @@ export interface SortCriteria<T> {
  * ];
  *
  * // Single criterion
- * arraySort(users, { key: 'name' });
+ * sortArray(users, { key: 'name' });
  * // [Alice, Bob, Charlie]
  *
- * arraySort(users, { key: 'age', direction: 'desc' });
+ * sortArray(users, { key: 'age', direction: 'desc' });
  * // [Charlie, Bob, Alice]
  *
  * // Multiple criteria - sort by role asc, then name asc as tiebreaker
@@ -67,11 +67,11 @@ export interface SortCriteria<T> {
  *   { name: 'Bob',     role: 'user'  },
  * ];
  *
- * arraySort(people, [{ key: 'role' }, { key: 'name' }]);
+ * sortArray(people, [{ key: 'role' }, { key: 'name' }]);
  * // [Alice (admin), Bob (user), Charlie (user)]
  * ```
  */
-export function arraySort<T>(
+export function sortArray<T>(
     items: readonly T[],
     criteria: SortCriteria<T> | SortCriteria<T>[],
 ): T[] {

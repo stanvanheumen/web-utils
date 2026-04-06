@@ -1,7 +1,7 @@
 /**
  * Groups an array of objects into a record keyed by the values of a specified field.
  *
- * Unlike {@link arrayMap}, which keeps only one item per key, `arrayGroupBy`
+ * Unlike {@link mapArray}, which keeps only one item per key, `groupByArray`
  * collects all items with the same key into an array.
  *
  * @template T - The object type; the field at `K` must be a `string` or `number`
@@ -19,14 +19,14 @@
  *   { role: 'user',  name: 'Carol' },
  * ];
  *
- * arrayGroupBy(users, 'role');
+ * groupByArray(users, 'role');
  * // {
  * //   admin: [{ role: 'admin', name: 'Alice' }],
  * //   user:  [{ role: 'user', name: 'Bob' }, { role: 'user', name: 'Carol' }],
  * // }
  * ```
  */
-export function arrayGroupBy<
+export function groupByArray<
     T extends Record<K, string | number>,
     K extends keyof T
 >(

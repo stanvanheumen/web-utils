@@ -17,7 +17,7 @@
  *   { id: "2", name: "Bob" }
  * ];
  *
- * const map = arrayMap(users, "id");
+ * const map = mapArray(users, "id");
  *
  * // {
  * //   "1": { id: "1", name: "Alice" },
@@ -30,7 +30,7 @@
  * - Later items with the same key will overwrite earlier ones
  * - Falsy items (null/undefined) are skipped
  */
-export function arrayMap<
+export function mapArray<
     T extends Record<string, unknown>,
     K extends keyof T
 >(

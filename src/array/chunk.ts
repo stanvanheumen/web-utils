@@ -12,17 +12,17 @@
  *
  * @example
  * ```ts
- * arrayChunk([1, 2, 3, 4, 5], 2);
+ * chunkArray([1, 2, 3, 4, 5], 2);
  * // [[1, 2], [3, 4], [5]]
  *
- * arrayChunk(['a', 'b', 'c', 'd'], 4);
+ * chunkArray(['a', 'b', 'c', 'd'], 4);
  * // [['a', 'b', 'c', 'd']]
  *
- * arrayChunk([], 3);
+ * chunkArray([], 3);
  * // []
  * ```
  */
-export function arrayChunk<T>(items: readonly T[], size: number): T[][] {
+export function chunkArray<T>(items: readonly T[], size: number): T[][] {
     if (size < 1) {
         throw new Error(`size must be >= 1, got ${size}`);
     }

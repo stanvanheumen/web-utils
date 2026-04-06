@@ -1,4 +1,4 @@
-import {REGEX_EMAIL} from '../regex/regex-email';
+import {REGEX_EMAIL} from '../regex/email';
 
 /**
  * Returns `true` if the given string is a valid email address.
@@ -13,13 +13,13 @@ import {REGEX_EMAIL} from '../regex/regex-email';
  *
  * @example
  * ```ts
- * stringIsEmail('user@example.com');      // true
- * stringIsEmail('user+tag@sub.domain.io') // true
- * stringIsEmail('not-an-email');          // false
- * stringIsEmail('@missing-local.com');    // false
- * stringIsEmail('missing-at-sign.com');   // false
+ * isEmail('user@example.com');      // true
+ * isEmail('user+tag@sub.domain.io') // true
+ * isEmail('not-an-email');          // false
+ * isEmail('@missing-local.com');    // false
+ * isEmail('missing-at-sign.com');   // false
  * ```
  */
-export function stringIsEmail(value: string): boolean {
+export function isEmail(value: string): boolean {
     return REGEX_EMAIL.test(value);
 }

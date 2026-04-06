@@ -13,20 +13,20 @@
  *
  * @example
  * ```ts
- * stringSlugify('Hello World');
+ * slugify('Hello World');
  * // 'hello-world'
  *
- * stringSlugify('  Héllo & Wörld!  ');
+ * slugify('  Héllo & Wörld!  ');
  * // 'hello-world'
  *
- * stringSlugify('What is a slug?');
+ * slugify('What is a slug?');
  * // 'what-is-a-slug'
  * ```
  */
-export function stringSlugify(value: string): string;
-export function stringSlugify(value: null): null;
-export function stringSlugify(value: undefined): undefined;
-export function stringSlugify(value: string | null | undefined): string | null | undefined {
+export function slugify(value: string): string;
+export function slugify(value: null): null;
+export function slugify(value: undefined): undefined;
+export function slugify(value: string | null | undefined): string | null | undefined {
     if (value === null || value === undefined) {
         return value;
     }

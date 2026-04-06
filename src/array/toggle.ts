@@ -15,23 +15,23 @@
  * @example
  * ```ts
  * // Primitives (default comparator)
- * arrayToggle([1, 2, 3], 2);
+ * toggleArray([1, 2, 3], 2);
  * // [1, 3]  (removed)
  *
- * arrayToggle([1, 3], 2);
+ * toggleArray([1, 3], 2);
  * // [1, 3, 2]  (added)
  *
  * // Objects - compare by id
  * const selected = [{ id: 1, name: 'Alice' }];
  *
- * arrayToggle(selected, { id: 2, name: 'Bob' }, (a, b) => a.id === b.id);
+ * toggleArray(selected, { id: 2, name: 'Bob' }, (a, b) => a.id === b.id);
  * // [{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }]  (added)
  *
- * arrayToggle(selected, { id: 1, name: 'Alice' }, (a, b) => a.id === b.id);
+ * toggleArray(selected, { id: 1, name: 'Alice' }, (a, b) => a.id === b.id);
  * // []  (removed)
  * ```
  */
-export function arrayToggle<T>(
+export function toggleArray<T>(
     items: readonly T[],
     item: T,
     compare: (a: T, b: T) => boolean = (a, b) => a === b,

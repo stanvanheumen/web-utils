@@ -12,17 +12,17 @@
  *
  * @example
  * ```ts
- * arrayRemove(['a', 'b', 'c'], 1);
+ * removeFromArray(['a', 'b', 'c'], 1);
  * // ['a', 'c']
  *
- * arrayRemove(['a', 'b', 'c'], -1);
+ * removeFromArray(['a', 'b', 'c'], -1);
  * // ['a', 'b']
  *
- * arrayRemove(['a', 'b', 'c'], 0);
+ * removeFromArray(['a', 'b', 'c'], 0);
  * // ['b', 'c']
  * ```
  */
-export function arrayRemove<T>(items: readonly T[], index: number): T[] {
+export function removeFromArray<T>(items: readonly T[], index: number): T[] {
     const i = index < 0 ? items.length + index : index;
 
     if (i < 0 || i >= items.length) {

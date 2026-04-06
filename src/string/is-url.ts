@@ -1,4 +1,4 @@
-import {REGEX_URL} from '../regex/regex-url';
+import {REGEX_URL} from '../regex/url';
 
 /**
  * Returns `true` if the given string is a valid URL.
@@ -14,14 +14,14 @@ import {REGEX_URL} from '../regex/regex-url';
  *
  * @example
  * ```ts
- * stringIsUrl('https://example.com');           // true
- * stringIsUrl('//example.com/path?q=1');        // true
- * stringIsUrl('ftp://files.example.com');       // true
- * stringIsUrl('http://192.168.1.1');            // false (private IP)
- * stringIsUrl('example.com');                   // false (no protocol)
- * stringIsUrl('not a url');                     // false
+ * isUrl('https://example.com');           // true
+ * isUrl('//example.com/path?q=1');        // true
+ * isUrl('ftp://files.example.com');       // true
+ * isUrl('http://192.168.1.1');            // false (private IP)
+ * isUrl('example.com');                   // false (no protocol)
+ * isUrl('not a url');                     // false
  * ```
  */
-export function stringIsUrl(value: string): boolean {
+export function isUrl(value: string): boolean {
     return REGEX_URL.test(value);
 }
